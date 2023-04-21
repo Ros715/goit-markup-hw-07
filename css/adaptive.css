@@ -690,7 +690,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: #FFFFFF;
 }
 
-.section-about-us {
+.about-list {
     /* padding-right: 24px; */
     display: flex;
     flex-wrap: wrap;
@@ -702,18 +702,18 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 @media screen and (min-width: 1158px) {
 }
 
-.section-about-article {
+.about-item {
     margin-right: 24px;
 }
 
-.section-about-article:last-child {
+.about-item:last-child {
     padding-right: 0;
     margin: 0;
     /* max-width: 264px; */
     /* padding-left: 24px; */
 }
 
-.button-svg {
+.about-item-button {
     display: none;
     margin-bottom: 8px;
     padding: 0;
@@ -725,21 +725,21 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 @media screen and (min-width: 768px) {
-    .button-svg {
+    .about-item-button {
         display: none;
     }
 }
 @media screen and (min-width: 1158px) {
-    .button-svg {
+    .about-item-button {
         display: block;
     }
 }
-.button-icon {
+.about-item-icon {
     width: 64px;
     height: 64px;
 }
 
-/* .section-about-article::before {
+/* .about-item::before {
 display: block;
 content: '';
 height: 112px;
@@ -752,21 +752,21 @@ background-position: center;
 background-color: #F4F4FD;
 } */
 
-/* .section-about-article:nth-child(1)::before {
+/* .about-item:nth-child(1)::before {
     background-image: url(../images/icons.svg/antenna\ 1.svg);
 }
-.section-about-article:nth-child(2)::before {
+.about-item:nth-child(2)::before {
     background-image: url(../images/icons.svg/clock\ 1.svg);
 }
-.section-about-article:nth-child(3)::before {
+.about-item:nth-child(3)::before {
     background-image: url(../images/icons.svg/diagram\ 1.svg);
 }
-.section-about-article:nth-child(4)::before {
+.about-item:nth-child(4)::before {
     background-image: url(../images/icons.svg/astronaut\ 1.svg);
 } */
 
 
-.section-about-item {
+.about-item-title {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 8px;
@@ -781,7 +781,7 @@ background-color: #F4F4FD;
     color: #2E2F42;
 }
 
-.discription-about {
+.about-item-text {
     max-width: 264px;
     margin-top: 0;
     margin-bottom: 0;
