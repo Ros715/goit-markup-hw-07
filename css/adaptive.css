@@ -26,6 +26,11 @@ body {
     margin: 0;
     padding-top: 72px;
 }
+/* @media screen and (max-width: 427px) {
+    * {
+        scale: 0.747;
+    }
+} */
 
 textarea {
     resize: none;
@@ -270,16 +275,19 @@ a {
 
 
 .hero-title {
-    padding-top: 188px;
+    padding-top: 112px;
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 48px;
+
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
     letter-spacing: 0.02em;
-    line-height: 1.07;
-
+    text-transform: capitalize;
     color: #FFFFFF;
 }
 
