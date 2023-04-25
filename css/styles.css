@@ -26,11 +26,11 @@ body {
     margin: 0;
     padding-top: 72px;
 }
-@media screen and (max-width: 427px) {
+/* @media screen and (max-width: 427px) {
     body {
         scale: 0.747;
     }
-}
+} */
 
 textarea {
     resize: none;
@@ -70,11 +70,17 @@ a {
 }
 
 .container {
-    width: 428px;
+    /* width: 428px; */
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+}
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width: 768px) {
     .container {
@@ -462,14 +468,60 @@ a {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/logo/hero_img.jpg');
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+        url('../images/logo/office-mobile.jpg');
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 427px),
+screen and (min-resolution: 192dpi) and (max-width: 427px),
+screen and (min-resolution: 2dppx) and (max-width: 427px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/logo/office-mobile@2x.jpg');
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/logo/office-tablet.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/logo/office-tablet@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/logo/office-desktop.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/logo/office-desktop@2x.jpg');
+    }
+}
 
 .hero-title {
     padding-top: 112px;
@@ -1164,6 +1216,7 @@ a {
     fill: #FFFFFF;
 }
 
+
 @media screen and (max-width: 767px) {
     .section-employees {
         padding-top: 96px;
@@ -1178,6 +1231,12 @@ a {
     .container-team {
         padding-bottom: 96px;
         padding-top: 96px;
+    }
+}
+@media screen and (max-width: 427px) {
+    .section-employee-card {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1299,6 +1358,15 @@ a {
     .container-customers {
         padding-bottom: 96px;
         padding-top: 96px;
+    }
+}
+@media screen and (max-width: 427px) {
+    .customers-list {
+        display: block;
+    }
+        .customers-list .customers-item {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
