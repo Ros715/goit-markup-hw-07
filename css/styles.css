@@ -26,11 +26,6 @@ body {
     margin: 0;
     padding-top: 72px;
 }
-/* @media screen and (max-width: 427px) {
-    body {
-        scale: 0.747;
-    }
-} */
 
 textarea {
     resize: none;
@@ -71,8 +66,9 @@ a {
 
 .container {
     /* width: 428px; */
-    padding-left: 15px;
-    padding-right: 15px;
+    /* width: calc(100% - 30px); */
+    /* padding-left: 15px;
+    padding-right: 15px; */
     text-align: center;
     /* margin: 0 auto; */
 }
@@ -116,7 +112,7 @@ a {
     display: inline-block;
     margin-top: 25.5px;
     margin-bottom: 25.5px;
-    margin-left: 0px;
+    margin-left: 16px;
 
     font-family: 'Raleway', sans-serif;
     font-style: ExtraBold;
@@ -395,6 +391,7 @@ a {
 
 .contact-list {
     margin-left: auto;
+    margin-right: 15px;
     display: none;
 }
 @media screen and (min-width: 768px) {
@@ -1348,7 +1345,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 @media screen and (max-width: 767px) {
 	.customers-item {
-		margin-left: 0;
+		margin-left: 16px;
         margin-top: 72px;
         width: 190px;
 	}
@@ -1375,7 +1372,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         margin-top: 72px;
     }
     .customers-item:nth-child(3n+1) {
-		margin-left: 96px;
+		margin-left: 112px;
 	}
     .container-customers {
         padding-bottom: 96px;
@@ -1388,7 +1385,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         margin-top: 72px;
     }
     .customers-item:first-child {
-		margin-left: 0;
+		margin-left: 16px;
 	}
     .container-customers {
         padding-bottom: 120px;
@@ -1652,7 +1649,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 	}
     .footer-1 {
         width: 264px;
-        margin-left: 0px;
+        margin-left: 16px;
         text-align: left;
     }
     .footer-text {
