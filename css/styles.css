@@ -468,7 +468,7 @@ a {
 }
 
 .overlay {
-    height: 432px;
+    /* height: 432px; */
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -580,7 +580,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     
     .container-hero {
         padding-bottom: 111px;
-    }}
+    }
+}
 
 @media screen and (min-width: 768px) {
     .hero-title {
@@ -606,7 +607,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         line-height: 60px;
     }
     .overlay {
-        height: 600px;
+        /* height: 600px; */
     }
     .container-hero {
         padding-bottom: 186px;
