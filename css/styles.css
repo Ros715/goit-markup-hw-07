@@ -100,6 +100,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .header-container {
@@ -196,7 +197,7 @@ a {
     border-radius: 4px;
 
     background-color: #FCFCFC;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .mobile-menu-close-btn {
@@ -262,7 +263,7 @@ a {
     top: 240px;
 }
 .mobile-menu-link.current {
-	color: blue;
+	color: #404BBF;
 }
 
 .mobile-menu-tel {
@@ -322,8 +323,8 @@ a {
 }
 
 .mobile-menu-soc-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: #FFFFFF;
 }
 
@@ -642,11 +643,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .form {
     padding-top: 72px;
     padding-bottom: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    /* margin-left: 24px;
+    margin-right: 24px; */
     /* margin-top: 16px; */
     border-radius: 4px;
-    width: 360px;
+    width: 408px;
+    padding-left: 23px;
+    padding-right: 25px;
 }
 
 .modal-name {
@@ -915,7 +918,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 /* ABOUT */
 
 .section-about {
-    padding-top: 24px;
+    padding-top: 96px;
     margin-top: 0;
     padding-bottom: 0;
     background-color: #FFFFFF;
@@ -967,6 +970,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     color: #434455;
 }
 
+@media screen and (max-width: 767px) {
+    .about-item:first-child {
+        margin-top: 0;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .about-item-button {
         display: none;
@@ -977,6 +986,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     }
     .about-item:nth-child(2n) {
         margin-left: 24px;
+    }
+    .about-item:nth-child(1),
+    .about-item:nth-child(2) {
+        margin-top: 0px;
     }
     .about-item-title {
     text-align: left;
@@ -1028,6 +1041,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         height: 64px;
     }
     .about-item-title {
+        text-align: left;
         margin-top: 0;
         margin-bottom: 0;
         margin-bottom: 8px;
@@ -1035,6 +1049,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
+        line-height: 24px;
         letter-spacing: 0.02em;
         line-height: 1.2;
 
@@ -1048,6 +1063,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.02em;
         line-height: 1.5;
 
@@ -1259,11 +1275,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         /* padding-top: 96px; */
     }
 	.section-employee-card {
-		margin-left: 66px;
+		margin-left: 0px;
         margin-top: 72px;
 	}
     .employees-list {
         /* margin-top: 72px; */
+        padding-left: 66px;
     }
     .container-team {
         padding-bottom: 96px;
@@ -1284,7 +1301,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         /* padding-top: 96px; */
     }
     .section-employee-card:nth-child(2n+1) {
-		margin-left: 92px;
+		margin-left: 0px;
 	}
     .section-employee-card:nth-child(2n+2) {
         margin-left: 24px;
@@ -1295,6 +1312,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     }
     .employees-list {
         margin-top: 72px;
+        padding-left: 93px;
     }
     .container-team {
         padding-bottom: 96px;
@@ -1346,9 +1364,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .customers-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
 }
 
 .customers-item {
@@ -1444,7 +1462,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     }
     .customers-list {
         margin-top: 72px;
-        padding-left: 93px;
+        /* width: 552px; */
+        padding-left: 0px;
+    }
+    .container-customers {
+        padding-left: 108px;
+        padding-right: 108px;
+        /* justify-content: center;         */
     }
     .section-customers {
         padding-bottom: 96px;
@@ -1681,7 +1705,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 	}
 	.footer-1 {
 		width: 372px;
-        margin-left: 108px;
+        /* margin-left: 108px; */
         text-align: left;
 	}
     .footer-text {
@@ -1694,7 +1718,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         margin-top: 16px;
     }
 	.footer-3 {
-        margin-left: 108px;
+        /* margin-left: 108px; */
         margin-top: 72px;
 	}
     .footer-31 {
