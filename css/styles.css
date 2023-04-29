@@ -410,17 +410,21 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .menu-item.n4,
+    .menu-item.n5 {
+        height: 14px;
+    }
     .contact-list {
         display: block;
     }
     .adress-contact-title {
         margin: 0;
         display: block;
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     .adress-contact-title .n5 {
-        margin-top:7.4px;
+        margin-top:12px;
     }
     .contact {
         margin-left: auto;
