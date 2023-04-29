@@ -112,8 +112,8 @@ a {
 
 .logo {
     display: inline-block;
-    margin-top: 25.5px;
-    margin-bottom: 25.5px;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
     /* padding-left: 16px; */
 
     font-family: 'Raleway', sans-serif;
@@ -417,7 +417,7 @@ a {
         margin: 0;
         display: block;
         padding-top: 16px;
-        padding-bottom: 16px;
+        /* padding-bottom: 16px; */
     }
     .adress-contact-title .n5 {
         margin-top:12px;
