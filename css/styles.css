@@ -416,11 +416,11 @@ a {
     .adress-contact-title {
         margin: 0;
         display: block;
-        padding-top: 16px;
-        /* padding-bottom: 16px; */
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
     .adress-contact-title .n5 {
-        margin-top:12px;
+        margin-top:7.4px;
     }
     .contact {
         margin-left: auto;
