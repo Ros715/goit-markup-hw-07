@@ -414,8 +414,10 @@ a {
         display: block;
     }
     .adress-contact-title {
+        margin: 0;
         display: block;
-        margin-top: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     .adress-contact-title .n5 {
         margin-top:12px;
@@ -1461,13 +1463,20 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         margin-top: 0;
     }
     .customers-list {
+
         margin-top: 72px;
-        /* width: 552px; */
+        width: 552px;
         padding-left: 0px;
     }
     .container-customers {
-        padding-left: 108px;
-        padding-right: 108px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        /* padding-left: 108px;
+        padding-right: 108px; */
         /* justify-content: center;         */
     }
     .section-customers {
